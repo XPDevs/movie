@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft: The Movie</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1b1b1b;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #111;
+            z-index: 1000;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .nav li {
+            margin-right: 40px;
+        }
+        
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav a:hover {
+            color: #58a700;
+        }
+
+.hero {
+    height: 100vh;
+    background: url('back.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+
+        .hero h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        .hero .button {
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #58a700;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        .hero .button:hover {
+            background-color: #4a8e00;
+        }
+
+        /* About Section */
+        .about {
+            padding: 4em 2em;
+            text-align: center;
+            background-color: #2e2e2e;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #111;
+            padding: 2em;
+            text-align: center;
+            color: #888;
+        }
+
+        .footer a {
+            color: #58a700;
+            text-decoration: none;
+        }
+
+        /* Video Section */
+        .watch {
+            padding: 2em;
+            text-align: center;
+            background-color: #333;
+        }
+
+        .watch h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .video-container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Watch</a></li>
+        </ul>
+    </div>
+
+    <div class="hero">
+        <h1>Minecraft: The Movie</h1>
+        <p>Experience the epic adventure in the world of Minecraft. Join our heroes as they journey through blocks, mobs, and danger!</p>
+        <button class="button" onclick="document.querySelector('.video-container').scrollIntoView({behavior: 'smooth'});">Watch Now</button>
+    </div>
+
+    <div class="about">
+        <h2>About the Movie</h2>
+        <p>Welcome to a world beyond imagination, where every block, every creature, and every landscape is a canvas for endless adventure. <strong>Minecraft: The Movie</strong> is a thrilling, heart-pounding journey set in the beloved universe of Minecraft, brought to life like never before.</p>
+        <p>The plot centers around the discovery of an ancient evil that has awakened beneath the surface of the Minecraft world. This powerful force threatens to destroy the peaceful block-based world, and it’s up to our heroes to journey across diverse biomes and unlock the secrets of the Overworld, all while facing terrifying challenges.</p>
+        <p>We’ve crafted this movie with the deep love and respect for the Minecraft community that has made the game such a worldwide sensation. Our team has worked tirelessly to ensure that every detail feels authentic to the spirit of the game. But at the same time, we’ve woven a new, original narrative that fans will connect with and be drawn into.</p>
+    </div>
+
+    <div class="watch">
+        <h2>Watch the Movie</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="https://dn721904.ca.archive.org/0/items/youtube-Bv9op4FKmk0/Bv9op4FKmk0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Minecraft Movie. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+
+    <script>
+        // Smooth scroll for the "Watch Now" button to video section
+        document.querySelector('.button').addEventListener('click', function() {
+            document.querySelector('.video-container').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
+
